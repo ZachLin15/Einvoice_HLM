@@ -244,9 +244,9 @@ def open_and_resave_excel(file_path):
 
 if __name__ == "__main__":
     # File paths - update these with your actual file paths
-    source_file = os.path.abspath(r"_internal\M-Einvoice\exportM2.xlsx")  # Source file
-    submission_file = r"_internal\M-Einvoice\BatchSubmission-v2.xlsx"  # Submission file
-    output_file = f"_internal\\M-Einvoice\\E Invoice {datetime.today().strftime('%Y-%m-%d')}.xlsx"  # New output file
+    source_file = os.path.abspath(r"C:\Users\USER\PycharmProjects\Einvoice_HLM\exportM2.xlsx")  # Source file
+    submission_file = r"C:\Users\USER\PycharmProjects\Einvoice_HLM\BatchSubmission-v2.xlsx"  # Submission file
+    output_file = f"C:\\Users\\USER\\PycharmProjects\Einvoice_HLM\\E Invoice {datetime.today().strftime('%Y-%m-%d')}.xlsx"  # New output file
 
     # Check if files exist
     if not os.path.exists(source_file):
@@ -274,7 +274,7 @@ if __name__ == "__main__":
     smtp_server = "smtp.office365.com"  # or smtp.gmail.com or your mail server
     smtp_port = 587
 
-    '''send_email_smtp(
+    send_email_smtp(
             sender_email,
             sender_password,
             recipient,
@@ -284,5 +284,5 @@ if __name__ == "__main__":
             output_file,
             smtp_server,
             smtp_port
-        )'''
+        )
 
