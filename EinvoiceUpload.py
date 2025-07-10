@@ -1,10 +1,8 @@
-import pandas as pd
-import openpyxl
-from openpyxl import load_workbook
-import os
-import warnings
 import win32com.client as win32
+import os
 import time
+from openpyxl import load_workbook
+import warnings
 from datetime import datetime
 import smtplib
 from email.message import EmailMessage
@@ -16,9 +14,7 @@ warnings.filterwarnings('ignore', category=UserWarning, module='openpyxl')
 warnings.filterwarnings('ignore', message='.*Data Validation.*')
 warnings.filterwarnings('ignore', message='.*Workbook contains no default style.*')
 
-import win32com.client as win32
-import os
-import time
+
 
 
 def refresh_data_connections(file_path):
